@@ -36,15 +36,15 @@ logging.basicConfig(
 )
 
 # 路径配置
-root_path = r"G:\航拍特写原始数据分辨率筛选1600#85#2.11\已处理\1080\分辨率合格\Drone China\上方"
-output_root = r"H:\0415（106盘处理）"
+root_path = r"Z:\A张新明\测试\22\_22集_雅思口语考试现场__开口脆_学霸是如何征服考官的_全程实录__p01_1__Band_8_5_IELTS__-_Saskia__1_"
+output_root = r"Z:\A张新明\测试\33"
 # RTX 4060专用配置
-ffmpeg_path = r"D:\ffmpeg-7.0.2-essentials_build\bin\ffmpeg.exe"
-ffprobe_path = r"D:\ffmpeg-7.0.2-essentials_build\bin\ffprobe.exe"
+ffmpeg_path = r"D:\ffmpeg-master-latest-win64-gpl\bin\ffmpeg.exe"
+ffprobe_path = r"D:\ffmpeg-master-latest-win64-gpl\bin\ffprobe.exe"
 # 配置参数b
 batch_size = 15  # 每批处理的视频文件数量
-head_cut_time = 60 * 4  # 片头时间（单位：秒）
-tail_cut_time = 60 * 2  # 片尾时间（单位：秒）
+head_cut_time = 60 * 1  # 片头时间（单位：秒）
+tail_cut_time = 60 * 1  # 片尾时间（单位：秒）
 
 # CSV 文件路径
 csv_file_path = os.path.join(log_dir, 'processed_videos.csv')
