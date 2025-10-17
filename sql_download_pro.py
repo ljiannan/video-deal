@@ -24,15 +24,15 @@ MYSQL_CONFIG = {
     'database': 'huya_video_tasks'
 }
 DB_TABLE_NAME = 'douyu_video_download'
-DOWNLOAD_DIRECTORY = r"Z:\a项目\douyu_400t"
+DOWNLOAD_DIRECTORY = r"C:\douyu_400t"
 FFMPEG_PATH = r"C:\ffmpeg-master-latest-win64-gpl\bin\ffmpeg.exe"
 
 # 2. 下载身份标识
 # ------------------------------------------------------------------------------
-DOWNLOADER_NAME = "dzy"
-MACHINE_NAME = "d138"
+DOWNLOADER_NAME = "ALL"
+#MACHINE_NAME = "d138"
 # 提示: 如果想自动获取当前电脑名，可以使用下面这行代码替换上一行
-# MACHINE_NAME = socket.gethostname()
+MACHINE_NAME = socket.gethostname()
 
 # 3. yt-dlp 内置下载器性能配置 (当不使用aria2c时生效)
 # ------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ ARIA2C_ARGS = "-c -x 16 -s 16 -k 1M --console-log-level=warn --summary-interval=
 # 当可用空间低于此值 (GB) 时，程序将自动停止，以防止磁盘写满。
 # 设置为 0 可禁用此功能。
 # 【代码优化】根据您的要求，将阈值从 5GB 修改为 10GB。
-MIN_FREE_SPACE_GB = 10
+MIN_FREE_SPACE_GB = 200
 
 # ==============================================================================
 # --- 程序核心代码 ---
